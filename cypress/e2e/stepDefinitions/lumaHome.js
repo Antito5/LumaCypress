@@ -25,3 +25,7 @@ Then(`the search returns all products with word {string} in the name`, (value)=>
         })
 
 })
+
+When(`clicks on {string} button in the main menu`,(button)=>{
+    lumaHome.getCreateAnAccountButton().click();
+})
