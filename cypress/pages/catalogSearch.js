@@ -8,5 +8,10 @@ class catalogsearch{
         return cy.get('a.product-item-link');
     }
 
+    getNoResultsMessage(){
+        return cy.get('.message.notice > div');
+    }
+
+
 }
 module.exports=new catalogsearch();

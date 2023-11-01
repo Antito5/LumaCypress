@@ -29,3 +29,7 @@ Then(`the search returns all products with word {string} in the name`, (value)=>
 When(`clicks on {string} button in the main menu`,(button)=>{
     lumaHome.getCreateAnAccountButton().click();
 })
+
+Then(`The search page is open showing a {string} message`,(message)=>{
+    catalogoSearch.getNoResultsMessage().should("contain.text",message);
+})
