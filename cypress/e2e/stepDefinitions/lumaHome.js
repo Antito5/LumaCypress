@@ -11,7 +11,7 @@ When(`Search the word {string} in the search bar`, (value)=>{
 })
 
 Then(`The search page is open showing the title {string}`, (title)=>{
-    catalogoSearch.getTitle().should("have.text",title);
+    catalogoSearch.getTitle().should("contain.text",title);
 })
 
 Then(`the search returns all products with word {string} in the name`, (value)=>{

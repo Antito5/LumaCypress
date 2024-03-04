@@ -5,7 +5,7 @@ Scenario: Search a product
     When Search the word "Hoodie" in the search bar
     Then The search page is open showing the title "Search results for: 'Hoodie'" 
     And the search returns all products with word "Hoodie" in the name 
-@focus 
+
 Scenario: Search an inexisting product
     Given the user goes to "Luma" page
     When Search the word "asasasas" in the search bar
